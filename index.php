@@ -40,11 +40,11 @@ include("./header.php");
     <section id='port-review-wrapper'>
 
       <div>
-        <img  alt='hero-1'/>
+        <img src='./images/mike.jpg'  alt='hero-1'/>
         <p>This place is very useful and has fast outcomes, I got 1,000 business cards there they were customized front and back to my like completely. I was very satisfied with them and the price was very affordable 👍</p>
       </div>
-<!--
-      <div>
+
+      <!-- <div>
         <img alt='hero-2'/>
         <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
       </div>
@@ -92,7 +92,13 @@ include("./header.php");
 
   </section>
 
+<!-- SCRIPT -->
+<script src="map.js" type='text/javascript'></script>
+
+
+
 <?php
+include('./g_api_key.php');
 /*body*/
 include("./footer.php");
 ?>

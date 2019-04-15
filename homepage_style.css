@@ -134,7 +134,49 @@
 
   align-self: center;
   just-self: center;
+
+  box-shadow: 0px 20px 20px rgba(0,0,0, 0.9);
 }
+
+/* IMAGES */
+
+#img1{
+  background: url('./images/leon.jpg');
+  background-size: cover;
+  background-position: 20% 0%;
+}
+
+#img2{
+  background: url('./images/portal.jpg');
+  background-size: cover;
+  background-position: 10% 0%;
+}
+
+#img3{
+  background: url('./images/mobile_bistro.jpg');
+  background-size: cover;
+  background-position: 37% 0%;
+}
+
+#img4{
+  background: url('./images/mechanic.jpg');
+  background-size: cover;
+  background-position: 90% 0%;
+}
+
+#img5{
+  background: url('./images/brand.jpg');
+  background-size: cover;
+  background-position: 20% 0%;
+}
+
+#img6{
+  background: url('./images/frank.jpg');
+  background-size: cover;
+  background-position: 90% 0%;
+}
+
+/* IMAGES */
 
 
 /*square images*/
@@ -175,11 +217,24 @@
 
 #port-review-wrapper div{
   box-sizing: border-box;
+  padding: 0.4em 0;
+
+  background-color: rgba(255, 255, 255, 0.5);
+
+  justify-self: center;
+  align-self: center;
+
+  height: auto;
+  width: 90%;
 
   display: flex;
   flex-direction: row;
 
   justify-content: space-around;
+
+  box-shadow: 0px 8px 20px rgba(0,0,0, 0.5);
+
+  border-radius: 5px;
 }
 
 #port-review-wrapper div img{
@@ -188,7 +243,7 @@
 
   color: rgba(220,220,220,1);
   line-height: 50px;
-  border: 2px solid gray;
+  border: 1px solid gray;
   background-color: gray;
   vertical-align: center;
   border-radius: 100%;
@@ -226,7 +281,7 @@
 /* HERO INFO*/
 
 #hero-info{
-  margin: 5em 0;
+  margin: 10em 0;
   display: grid;
 
   height: auto;
@@ -253,7 +308,7 @@
   background: rgba(0,0,0,1);
 
   display: inline-block;
-  width: 3px;
+  width: 2px;
   height: 270px;
 
   margin-right: 1em;
