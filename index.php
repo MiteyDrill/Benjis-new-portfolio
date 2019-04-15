@@ -4,10 +4,10 @@ include("./header.php");
 ?>
 
   <nav id='navigation'>
-    <ul>
-      <li>Home</li>
-      <li>Portfolio</li>
-      <li>Contact</li>
+    <ul id='nav-li'>
+      <li id='home'>Home</li>
+      <li id='portfolio'>Portfolio</li>
+      <li id='contacts'>Contact</li>
     </ul>
   </nav>
 
@@ -93,7 +93,10 @@ include("./header.php");
   </section>
 
 <!-- SCRIPT -->
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
 <script src="map.js" type='text/javascript'></script>
+<script src="link_scroll.js" type='text/javascript'></script>
+
 
 
 
