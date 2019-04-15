@@ -13,7 +13,7 @@ include("./header.php");
 
   <header id='header'>
 
-    <h1><span>Benji's</span> Print Shop</h1>
+    <h1><span>Benji's</span> Web Design</h1>
 
   </header>
 
@@ -41,10 +41,10 @@ include("./header.php");
 
       <div>
         <img src='./images/mike.jpg'  alt='hero-1'/>
-        <p>This place is very useful and has fast outcomes, I got 1,000 business cards there they were customized front and back to my like completely. I was very satisfied with them and the price was very affordable 👍</p>
+        <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
       </div>
 
-      <!-- <div>
+      <div>
         <img alt='hero-2'/>
         <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
       </div>
@@ -62,7 +62,7 @@ include("./header.php");
       <div>
         <img alt='hero-5'/>
         <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
-      </div> -->
+      </div>
 
     </section>
 
@@ -83,9 +83,9 @@ include("./header.php");
 
     <div id='hero-details'>
 
-      <h3>David Gamboa</h3>
+      <h3>Benjamin Sanchez</h3>
       <p>509.999.9999</p>
-      <p>shop.benjis@gmail.com</p>
+      <p>TheBen@gmail.com</p>
       <p>address</p>
 
     </div>
@@ -96,6 +96,8 @@ include("./header.php");
 <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
 <script src="map.js" type='text/javascript'></script>
 <script src="link_scroll.js" type='text/javascript'></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+<script src="animations.js" type='text/javascript'></script>
 
 
 
