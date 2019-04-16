@@ -356,3 +356,79 @@ footer p{
 }
 
 /* FOOTER */
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 800px){
+
+  #header h1{
+    font-size: 8vw;
+  }
+
+  #portfolio-wrapper{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 2fr;
+    grid-row-gap: 10vh;
+  }
+
+  #port-aside-images{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    display: none;
+    /* grid-column-gap: 1vw; */
+  }
+
+  #port-aside-images img{
+    height: 40vh;
+    width: 90%;
+  }
+
+  #port-images{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #port-review-wrapper{
+    padding: 3em 0;
+    grid-row-gap: 5vh;
+  }
+
+  #map{
+    height: 35vh;
+    min-height: 30vh;
+  }
+
+  #hero-info{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #hero-details{
+    justify-self: center;
+    width: 50%;
+  }
+
+}
+
+@media only screen and (max-width: 550px){
+
+  #port-images{
+    margin: 5em 0;
+    width: 100%;
+
+    grid-column-gap: 5vw;
+    grid-row-gap: 5vw;
+  }
+  .port-div-img{
+    width: 100%;
+  }
+
+  #hero-image{
+    width: 100%;
+  }
+
+  #hero-details{
+    width: 80%;
+  }
+
+
+}

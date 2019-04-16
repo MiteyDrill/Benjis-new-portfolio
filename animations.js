@@ -6,19 +6,20 @@ function darkAnim(opacity, id){
 
     targets: id,
     duration: 800,
+    backgroundColor: "rgba(0, 0, 0, 1)",
 
     opacity: opacity,
 
-    easing: "linear"
+    easing: "linear",
 
   });
 
 }
 
 /*User Anime.GET somehow to tidy this up*/
-$("#img1").hover(function() { darkAnim(0.3, "#img1")}, function(){ darkAnim(1, "#img1")});
-$("#img2").hover(function() { darkAnim(0.3, "#img2")}, function(){ darkAnim(1, "#img2")});
-$("#img3").hover(function() { darkAnim(0.3, "#img3")}, function(){ darkAnim(1, "#img3")});
-$("#img4").hover(function() { darkAnim(0.3, "#img4")}, function(){ darkAnim(1, "#img4")});
-$("#img5").hover(function() { darkAnim(0.3, "#img5")}, function(){ darkAnim(1, "#img5")});
-$("#img6").hover(function() { darkAnim(0.3, "#img6")}, function(){ darkAnim(1, "#img6")});
+$("#img1").hover(function() { darkAnim(0.5, "#img1")}, function(){ darkAnim(1, "#img1")});
+$("#img2").hover(function() { darkAnim(0.5, "#img2")}, function(){ darkAnim(1, "#img2")});
+$("#img3").hover(function() { darkAnim(0.5, "#img3")}, function(){ darkAnim(1, "#img3")});
+$("#img4").hover(function() { darkAnim(0.5, "#img4")}, function(){ darkAnim(1, "#img4")});
+$("#img5").hover(function() { darkAnim(0.5, "#img5")}, function(){ darkAnim(1, "#img5")});
+$("#img6").hover(function() { darkAnim(0.5, "#img6")}, function(){ darkAnim(1, "#img6")});
