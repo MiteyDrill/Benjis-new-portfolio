@@ -104,6 +104,59 @@
   grid-template-columns: 0.7fr 0.3fr;
 }
 
+/* INNER DIV INFO */
+
+.info-panel{
+  width: 0%;      /*animate this*/
+  height: 100%;
+
+  opacity: 0;     /*animate this*/
+
+  background-color: rgba(0,0,0,0.7) !important;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-end;
+}
+
+.info-panel h4{
+  font-family: league;
+  color: white;
+  font-size: 2vw;
+
+  margin-left: 0.2em;
+}
+
+.info-panel p{
+  font-size: 1.2vw;
+  color: white;
+  margin: 0.4em 0.7em;
+  width: 70%;
+}
+
+.info-panel button{
+  padding: 1.5em;
+  width: 80%;
+
+  margin: 1.3em auto;
+
+  /*style*/
+
+  /* change this */
+  font-family: monospace;
+  background-color: rgba(255,255,255,0.8);
+
+  border: solid 2px white;
+  border-radius: 25px;
+}
+
+/* INNER DIV INFO */
+
+
+
+
+
 
 /*rect images*/
 
@@ -358,7 +411,7 @@ footer p{
 /* FOOTER */
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
 
   #header h1{
     font-size: 8vw;

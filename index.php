@@ -21,12 +21,47 @@ include("./header.php");
 
     <section id='port-images'>
 
-      <div id='img1' class='port-div-img'></div>
-      <div id='img2' class='port-div-img'></div>
-      <div id='img3' class='port-div-img'></div>
-      <div id='img4' class='port-div-img'></div>
-      <div id='img5' class='port-div-img'></div>
-      <div id='img6' class='port-div-img'></div>
+      <!-- first image panel -->
+      <div id='img1' class='port-div-img'>
+        <div id='img1-info' class='info-panel'>
+          <h4>Leon Elegante</h4>
+          <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
+          <button>Learn more</button>
+        </div>
+      </div>
+
+      <div id='img2' class='port-div-img'>
+
+        <div id='img2-info' class='info-panel'></div>
+
+      </div>
+
+
+      <div id='img3' class='port-div-img'>
+
+        <div id='img3-info' class='info-panel'></div>
+
+      </div>
+
+      <div id='img4' class='port-div-img'>
+
+        <div id='img4-info' class='info-panel'></div>
+
+      </div>
+
+
+      <div id='img5' class='port-div-img'>
+
+        <div id='img5-info' class='info-panel'></div>
+
+      </div>
+
+
+      <div id='img6' class='port-div-img'>
+
+        <div id='img6-info' class='img6-info'></div>
+
+      </div>
 
     </section>
 
@@ -96,7 +131,7 @@ include("./header.php");
 <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
 <script src="map.js" type='text/javascript'></script>
 <script src="link_scroll.js" type='text/javascript'></script>
-<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>-->
 <script src="animations.js" type='text/javascript'></script>
 
 
