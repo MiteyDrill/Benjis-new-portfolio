@@ -34,6 +34,8 @@
 #navigation ul li{
   cursor: pointer;
 
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7));
+
   padding: 1em 1em;
   border: solid 2px black;
   border-radius: 4%;
@@ -99,7 +101,7 @@
 
   display: grid;
 
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 
   grid-template-columns: 0.7fr 0.3fr;
 }
@@ -112,7 +114,7 @@
 
   opacity: 0;     /*animate this*/
 
-  background-color: rgba(0,0,0,0.7) !important;
+  background-color: rgba(0,0,0,0.65) !important;
 
   display: flex;
   flex-direction: column;
@@ -123,29 +125,42 @@
 .info-panel h4{
   font-family: league;
   color: white;
-  font-size: 2vw;
+  font-size: calc(1rem + 1.3vw + 2vh);
 
-  margin-left: 0.2em;
+  margin-left: 0.4em;
+  margin: 0.1em 0;
 }
 
 .info-panel p{
   font-size: 1.2vw;
   color: white;
-  margin: 0.4em 0.7em;
+  font-size: calc(0.5rem + 0.9vw + 1vh);
+  margin-bottom: 2em;
+  margin-left: 0.8em;
   width: 70%;
 }
 
 .info-panel button{
-  padding: 1.5em;
-  width: 80%;
+  padding: 2vh 0.3em;
+  width: 60%;
 
-  margin: 1.3em auto;
+  margin-top: 0.2em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: calc(0.4rem + 0.9vw);
+  color: rgba(0,0,0, 0.7) !important;
 
   /*style*/
 
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 1);
+
   /* change this */
   font-family: monospace;
-  background-color: rgba(255,255,255,0.8);
+
+  background: rgba(255, 255, 255, 1);
+  color: white;
 
   border: solid 2px white;
   border-radius: 25px;
@@ -168,7 +183,7 @@
   margin: 3em 2em;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr) ;
+  grid-template-columns: repeat(2, 1fr) ;
   grid-template-rows: auto;
 
   column-gap: 5em;
@@ -183,7 +198,7 @@
 
   background-color: gray;
 
-  height: 85vh;
+  height: 110vh;
   width: 100%;
 
   align-self: center;

@@ -42,6 +42,7 @@ $('.port-div-img').on( "mouseenter", function(){
     // Animation complete.
   });
 
+
 });
 
 $('.port-div-img').on( "mouseleave", function(){

@@ -32,34 +32,62 @@ include("./header.php");
 
       <div id='img2' class='port-div-img'>
 
-        <div id='img2-info' class='info-panel'></div>
+        <div id='img2-info' class='info-panel'>
+          <div id='img2-info' class='info-panel'>
+            <h4>Leon Elegante</h4>
+            <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
+            <button>Learn more</button>
+          </div>
+        </div>
 
       </div>
 
 
       <div id='img3' class='port-div-img'>
 
-        <div id='img3-info' class='info-panel'></div>
+        <div id='img3-info' class='info-panel'>
+          <div id='img3-info' class='info-panel'>
+            <h4>Leon Elegante</h4>
+            <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
+            <button>Learn more</button>
+          </div>
+        </div>
 
       </div>
 
       <div id='img4' class='port-div-img'>
 
-        <div id='img4-info' class='info-panel'></div>
+        <div id='img4-info' class='info-panel'>
+          <div id='img4-info' class='info-panel'>
+            <h4>Leon Elegante</h4>
+            <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
+            <button class='more-btn'>Learn more</button>
+          </div>
+        </div>
 
       </div>
 
 
       <div id='img5' class='port-div-img'>
 
-        <div id='img5-info' class='info-panel'></div>
+        <div id='img5-info' class='info-panel'>
+          <div id='img5-info' class='info-panel'>
+            <h4>Leon Elegante</h4>
+            <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
+            <button>Learn more</button>
+          </div>
+        </div>
 
       </div>
 
 
       <div id='img6' class='port-div-img'>
 
-        <div id='img6-info' class='img6-info'></div>
+          <div id='img6-info' class='info-panel'>
+            <h4>Leon Elegante</h4>
+            <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
+            <button>Learn more</button>
+          </div>
 
       </div>
 
