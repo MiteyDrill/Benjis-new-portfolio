@@ -7,7 +7,7 @@ include("./header.php");
     <ul id='nav-li'>
       <li id='home'>Home</li>
       <li id='portfolio'>Portfolio</li>
-      <li id='contacts'>Contact</li>
+      <!-- <li id='contacts'>Contact</li> -->
     </ul>
   </nav>
 
@@ -24,9 +24,13 @@ include("./header.php");
       <!-- first image panel -->
       <div id='img1' class='port-div-img'>
         <div id='img1-info' class='info-panel'>
-          <h4>Leon Elegante</h4>
-          <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
-          <button>Learn more</button>
+          <h4>TURF Lifestyle</h4>
+          <p class='subtext'>Squarespace</p>
+          <p class='maintext'>
+            TURF Lifestyle was built by my sister Ariel, she is an entrepreneur, fitness coach, and web designer! Together we manage the design and
+          look of the website. Our goal is to make it simple to navigate and enjoyable to view
+          </p>
+          <a type="button" href="http://turflifestyle.com" value="turflifestyle" target="_blank" class="button">Visit Site</a>
         </div>
       </div>
 
@@ -34,9 +38,13 @@ include("./header.php");
 
         <div id='img2-info' class='info-panel'>
           <div id='img2-info' class='info-panel'>
-            <h4>Leon Elegante</h4>
-            <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
-            <button>Learn more</button>
+            <h4>BitmapWarriors</h4>
+            <p class='subtext'>Wordpress</p>
+            <p class='maintext'>
+              BitmapWarriors was originally set up and built by my brother David.
+              He is a graphic designer, web consultant, and web designer
+          </p>
+            <a type="button" href="http://BitmapWarriors.com" value="BitmapWarriors" target="_blank" class="button">Visit Site</a>
           </div>
         </div>
 
@@ -47,98 +55,137 @@ include("./header.php");
 
         <div id='img3-info' class='info-panel'>
           <div id='img3-info' class='info-panel'>
-            <h4>Leon Elegante</h4>
-            <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
-            <button>Learn more</button>
+            <h4>Ben-Dev V.2</h4>
+            <p class='subtext'>Custom</p>
+            <p class='maintext'>
+              This happens to be the second portfolio site I ever built.
+              Its not the best but it is pretty simple
+            </p>
+            <a type="button" href="http://ben-dev.bitmapwarriors.com" value="Ben-Dev-V2" target="_blank" class="button">Visit Site</a>
           </div>
         </div>
 
       </div>
 
-      <div id='img4' class='port-div-img'>
+      <!-- <div id='img4' class='port-div-img'>
 
         <div id='img4-info' class='info-panel'>
           <div id='img4-info' class='info-panel'>
-            <h4>Leon Elegante</h4>
-            <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
-            <button class='more-btn'>Learn more</button>
+            <h4>BenDev V.1</h4>
+            <p class='subtext'>Custom</p>
+            <p class='maintext'>
+              My first portfolio (Mobile View Only) - its not very good...
+            </p>
+            <button class='more-btn'>Visit Site</button>
           </div>
         </div>
 
-      </div>
+      </div> -->
 
 
       <div id='img5' class='port-div-img'>
 
         <div id='img5-info' class='info-panel'>
           <div id='img5-info' class='info-panel'>
-            <h4>Leon Elegante</h4>
-            <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
-            <button>Learn more</button>
+            <h4>Benji's WebDev</h4>
+            <p class='subtext'>Custom</p>
+            <p class='maintext'> My third portfolio - this website. My goal was to build a website
+              for my brother's graphic design business, but on the second day of development I changed
+              it to my own portfolio site
+            </p>
+            <a type="button" href="#" value="benjis-web" class="button">Visit Site</a>
           </div>
         </div>
 
       </div>
 
 
-      <div id='img6' class='port-div-img'>
+      <!-- <div id='img6' class='port-div-img'>
 
           <div id='img6-info' class='info-panel'>
-            <h4>Leon Elegante</h4>
-            <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
-            <button>Learn more</button>
+            <h4>Your Website!</h4>
+            <p class='subtext'>Wordpress / Custom</p>
+            <p class='maintext'>
+              Your website could be my next project! Contact me below so we can get started
+            </p>
+            <button>Visit Site</button>
           </div>
 
-      </div>
+      </div> -->
 
     </section>
 
     <section id='port-aside-images'>
 
-      <img alt='img-1'/>
-      <img alt='img-2'/>
+      <div class='links' >
+        <a href="https://codepen.io/MiteyDrill/" target="_blank">
+          <img src='./images/codepen' alt='codepen link'/>
+          <p>Codepen.io</p>
+        </a>
+      </div>
+
+
+      <div class='links'>
+        <a href="https://github.com/MiteyDrill" target="_blank">
+          <img src='./images/github' alt='github link'/>
+          <p>GitHub</p>
+        </a>
+      </div>
+
+
+      <div class='links'>
+        <a href="https://twitter.com/TheBen_S" target="_blank">
+          <img src='./images/twitter' alt='twitter link'/>
+          <p>Twitter</p>
+        </a>
+      </div>
+      <!-- <img alt='img-1'/>
+      <img alt='img-2'/> -->
 
     </section>
 
     <section id='port-review-wrapper'>
 
-      <div>
+      <h3>About me</h3>
+      <p>My name is <span id='username'>Benjamin Sanchez</span>.</br> I am a <span class='flip-txt red-txt'>web developer</span> who is passionate about design and UI</p>
+
+      <!-- <div>
         <img src='./images/mike.jpg'  alt='hero-1'/>
         <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
       </div>
 
       <div>
-        <img alt='hero-2'/>
+        <img src='./images/mike.jpg' alt='hero-2'/>
         <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
       </div>
 
       <div>
-        <img alt='hero-3'/>
+        <img src='./images/mike.jpg' alt='hero-3'/>
         <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
       </div>
 
       <div>
-        <img alt='hero-4'/>
+        <img src='./images/mike.jpg' alt='hero-4'/>
         <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
       </div>
 
       <div>
-        <img alt='hero-5'/>
+        <img src='./images/mike.jpg' alt='hero-5'/>
         <p>Quisque interdum elit vitae tortor congue, a dapibus ex sollicitudin</p>
-      </div>
+      </div> -->
 
     </section>
 
   </div>
 
 
-  <section id='map'>
+  <!-- <section id='map'>
 
 
-  </section>
+  </section> -->
 
 
-  <section id='hero-info'>
+  <!-- <section id='hero-info'>
 
     <div id='hero-image'>
       <img alt='hero-img'/>
@@ -147,13 +194,11 @@ include("./header.php");
     <div id='hero-details'>
 
       <h3>Benjamin Sanchez</h3>
-      <p>509.999.9999</p>
-      <p>TheBen@gmail.com</p>
-      <p>address</p>
+      <p>TheBen.Business@gmail.com</p>
 
     </div>
 
-  </section>
+  </section> -->
 
 <!-- SCRIPT -->
 <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
@@ -161,6 +206,16 @@ include("./header.php");
 <script src="link_scroll.js" type='text/javascript'></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>-->
 <script src="animations.js" type='text/javascript'></script>
+
+<script>
+	if($(window).width() < 900){
+  	$(function() {
+
+  	 jQuery.fx.off = true;
+
+  	});
+	}
+</script>
 
 
 
