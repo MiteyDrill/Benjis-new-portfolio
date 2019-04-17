@@ -1,5 +1,5 @@
 <?php
-include("./header.php");
+include("./main_header.php");
 /*body*/
 ?>
 

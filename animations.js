@@ -81,6 +81,7 @@ let del = function(flip){
   }, 80);
 }
 
+//flips written text every couple seconds
 let changeText = function(time = 2000, flip = true){
 
   let initialInterval = setInterval(function() {
@@ -93,6 +94,7 @@ let changeText = function(time = 2000, flip = true){
 
 }
 
+//starts written animation
 window.onload = changeText();
 
 //JQUERY animations for bigger screens
