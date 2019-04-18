@@ -46,6 +46,8 @@
 #navigation ul li{
   cursor: pointer;
 
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), color-stop(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.7)));
+
   background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7));
 
   padding: 1vh 2vw;
@@ -58,23 +60,46 @@
 /*HEADER*/
 
 #header{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   height: 100vh;
   min-height: 500px;
   width: 100%;
 
-  flex-direction: column;
+  -webkit-box-orient: vertical;
 
-  justify-content: center;
-  align-items: center;
+  -webkit-box-direction: normal;
+
+      -ms-flex-direction: column;
+
+          flex-direction: column;
+
+  -webkit-box-pack: center;
+
+      -ms-flex-pack: center;
+
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #header h1{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   font-family: league;
 
@@ -84,9 +109,16 @@
 
 #header span{
   display: inherit;
-  flex-direction: inherit;
-  justify-content: inherit;
-  align-items: inherit;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+      -ms-flex-direction: inherit;
+          flex-direction: inherit;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
 
   font-family: league;
 
@@ -97,6 +129,7 @@
   color: white;
 
   vertical-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), color-stop(rgba(0 ,0 ,0, 0.7)), to(rgba(255,255,255,1)));
   background: linear-gradient(rgba(0,0,0,1), rgba(0 ,0 ,0, 0.7), rgba(255,255,255,1));
 }
 
@@ -128,10 +161,21 @@
 
   background-color: rgba(0,0,0,0.65) !important;
 
-  display: flex;
-  flex-direction: column;
+  display: -webkit-box;
 
-  justify-content: flex-end;
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
+  -webkit-box-pack: end;
+
+      -ms-flex-pack: end;
+
+          justify-content: flex-end;
 }
 
 .info-panel h4{
@@ -175,7 +219,9 @@
 
   /*style*/
 
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 1);
+
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 1);
 
   /* change this */
   font-family: monospace;
@@ -188,16 +234,27 @@
 }
 
 .button{
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   justify-self: center;
 
   width: 40%;
   height: 5vh;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
 
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+
+      -ms-flex-pack: center;
+
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   border-radius: 30px;
 
@@ -212,6 +269,7 @@
 }
 
 .button:hover{
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 1)), color-stop(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 1)));
   background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
 }
 
@@ -237,7 +295,9 @@
   grid-template-columns: repeat(2, 1fr) ;
   grid-template-rows: auto;
 
-  column-gap: 5em;
+  -webkit-column-gap: 5em;
+
+          column-gap: 5em;
   row-gap: 5em;
   /* Try self justifying children and removing border box here */
 
@@ -252,7 +312,9 @@
   height: 80vh;
   width: 100%;
 
-  align-self: center;
+  -ms-flex-item-align: center;
+
+      align-self: center;
   just-self: center;
 }
 
@@ -304,24 +366,40 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
 
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+          box-sizing: border-box;
 }
 
 #port-aside-images .links{
   /* grid */
   justify-self: center;
-  align-self: start;
+  -ms-flex-item-align: start;
+      align-self: start;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
 
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 
   /* flex */
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   background-color: rgba(0,0,0,0.03);
 
-  box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
+
+          box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
 
 
   height: 50%;
@@ -329,10 +407,19 @@
 }
 
 #port-aside-images a{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 
   height: 100%;
   width: 100%;
@@ -343,7 +430,8 @@
 
 /* CHANGE THIS TO AN ANIMATON */
 #port-aside-images a:hover{
-  box-shadow: 0px 10px 10px rgba(0,0,0,0.7);
+  -webkit-box-shadow: 0px 10px 10px rgba(0,0,0,0.7);
+          box-shadow: 0px 10px 10px rgba(0,0,0,0.7);
 }
 
 .links img{
@@ -372,18 +460,32 @@
 
 #port-review-wrapper{
   /* display: grid; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
-  flex-direction: column;
+  -webkit-box-orient: vertical;
 
-  justify-content: center;
+  -webkit-box-direction: normal;
+
+      -ms-flex-direction: column;
+
+          flex-direction: column;
+
+  -webkit-box-pack: center;
+
+      -ms-flex-pack: center;
+
+          justify-content: center;
   /* align-items: center; */
 
   height: auto;
 
   background-color: rgba(220,220,220,1);
 
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+          box-sizing: border-box;
   margin: 0em 1em;
 
   /* grid-template-columns: auto;
@@ -401,23 +503,36 @@
 }
 
 #port-review-wrapper div{
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0.4em 0;
 
   background-color: rgba(255, 255, 255, 0.5);
 
   justify-self: center;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 
   height: auto;
   width: 90%;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
 
-  box-shadow: 0px 2px 4px rgba(0,0,0, 0.5);
+      justify-content: space-around;
+
+  -webkit-box-shadow: 0px 2px 4px rgba(0,0,0, 0.5);
+
+          box-shadow: 0px 2px 4px rgba(0,0,0, 0.5);
 
   border-radius: 5px;
 }
@@ -433,19 +548,24 @@
   vertical-align: center;
   border-radius: 100%;
 
-  align-self: center;
+  -ms-flex-item-align: center;
+
+      align-self: center;
   self-justify: center;
 }
 
 #port-review-wrapper div p{
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 80%;
 
   text-justify:
 
-  text-align: left;
+  text-align: ;
 
-  align-self: center;
+  -ms-flex-item-align: center;
+
+      align-self: center;
   self-justify: center;
 }
 
@@ -457,6 +577,8 @@
     height: 70vh;
     min-height: 600px;
     width: 100%;
+
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(130,255,150, 0.7)), to(rgba(170, 255, 120, 0.7)));
 
     background: linear-gradient(rgba(130,255,150, 0.7), rgba(170, 255, 120, 0.7));
 }
@@ -482,7 +604,8 @@
   width: 400px;
 
   justify-self: center;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 
   background-color: black;
 }
@@ -502,7 +625,8 @@
 }
 
 #hero-details{
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 #hero-details h3{
@@ -523,13 +647,18 @@
 footer{
   height: 16vh;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   color: white;
 
   background: rgba(0,0,0,1);
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 footer p{
@@ -545,6 +674,10 @@ footer p{
 
 /************* PRODUCT PAGE ****************************/
 
+#product-page-wrapper{
+  display: grid;
+  
+}
 
 
 /************* PRODUCT PAGE ****************************/
@@ -586,7 +719,9 @@ footer p{
     width: 80% !important;
     height: 100% !important;
 
-    align-self: center !important;
+    -ms-flex-item-align: center !important;
+
+        align-self: center !important;
   }
 
   .links img{
