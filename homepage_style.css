@@ -676,9 +676,55 @@ footer p{
 
 #product-page-wrapper{
   display: grid;
-  
+
+  /*minmax (300px size of the img*/
+  grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
+  grid-row-gap: 10vw;
+
+  margin: 1em 0.5em;
 }
 
+.product-container{
+  justify-self: center;
+  align-self: center;
+
+  height: auto;
+
+  width: 300px; /*img size*/
+
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+}
+
+.product-details{
+  display: flex;
+  flex-direction: column;
+}
+
+.product-details h2{
+  margin-left: 0.1em;
+}
+
+.product-details p{
+  margin-left: 0.8em;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+.product-details a{
+  display: inline-block;
+  text-align: center;
+  vertical-align: center;
+
+  padding: 1em;
+
+  font-family: "arial";
+  background-color: rgba(220, 220, 220, 1);
+  text-decoration: none;
+  color: black;
+}
 
 /************* PRODUCT PAGE ****************************/
 
