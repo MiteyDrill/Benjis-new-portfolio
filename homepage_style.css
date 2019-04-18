@@ -729,6 +729,73 @@ footer p{
 /************* PRODUCT PAGE ****************************/
 
 
+/************* DISPLAYING SINGLE PRODUCT ***************************/
+
+#product-wrapper{
+  height: 100vh;
+  width: 100%;
+  min-width: 700px;
+  min-height: 600px;
+  
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#product-central{
+
+  height: 90%;
+  width: 80%;
+  box-shadow: 0px 5px 8px rgba(0,0,0, 0.6);
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#product-central img{
+  align-self: start;
+  justify-self: center;
+
+  margin-top: 5em;
+
+  box-shadow: 0px 0px 20px rgba(0,0,0, 0.75);
+}
+
+#product-wrap::before{
+  content: '';
+  width: 1px;
+  height: 300px;
+  display: block;
+  float: left;
+  margin-right: 0.5em;
+  background-color: black;
+}
+
+#product-wrap{
+  margin-top: 5em;
+  
+  align-self: start;
+  justify-self: center;
+}
+
+#product-wrap h2{
+  font-family: "league";
+  font-size: 1.5em;
+}
+
+#product-wrap p{
+  margin-top: 1.5em;
+
+  font-size: 1.3em;
+}
+
+
+/************* DISPLAYING SINGLE PRODUCT ***************************/
 
 
 

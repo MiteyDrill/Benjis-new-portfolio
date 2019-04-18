@@ -40,12 +40,17 @@ if(isset($_GET['id'])){
        $row = mysqli_fetch_assoc($result);
         ?>
         
+        <!-- Html -->
 
-
-        <img src="<?php echo ".". $row["img_location"] ?>" style="width: 300px; height: 300px" href="product image"/>
-        <h2><?php echo $row["title"] ?></h2>
-        <p><?php echo $row["description"] ?></p>
-
+        <main id='product-wrapper'>
+            <div id='product-central'>
+                <img src="<?php echo ".". $row["img_location"] ?>" style="width: 300px; height: 300px" href="product image"/>
+                <div  id='product-wrap'>
+                    <h2><?php echo $row["title"] ?></h2>
+                    <p><?php echo $row["description"] ?></p>
+                </div>
+            </div>
+         </main>
 
         <?php
     }

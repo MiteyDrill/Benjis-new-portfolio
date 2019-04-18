@@ -28,6 +28,7 @@ if(mysqli_num_rows($result) > 0){
         //product
         ?>
 
+            <main>
             <div class='product-container'>
                 <img src="<?php echo ".". $row["img_location"] ?>" style="width: 300px; height: 300px" href="product image"/>
                 <div class='product-details'>
