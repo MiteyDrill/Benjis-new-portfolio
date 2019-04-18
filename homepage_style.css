@@ -135,6 +135,55 @@
 
 /*HEADER*/
 
+/************* WHAT WE OFFER **************/
+
+#offer-container{
+  width: 100%;
+  height: auto;
+  
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0px 10px 10px rgba(0,0,0, .3);
+
+  text-align: center;
+
+  padding: 30vh 0;
+}
+
+#offer-container h2{
+  font-size: calc(2em + 1vw + 0.5vh);
+  font-family: 'league';
+  margin-bottom: 1em;
+}
+
+#offer-info-wrapper{
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 3em;
+
+  justify-content: space-around;
+}
+
+.icon-info{
+  height: auto;
+  width: 20%;
+}
+
+.icon-info p{
+  line-height: 1.4em;
+  margin-top: 1.5em;
+  font-size: calc(0.5em + 0.5vw + 0.5vh);
+}
+
+.icon-info img{
+
+  width: 50%; /*for the icon*/
+}
+
+/************* WHAT WE OFFER **************/
+
 
 /* PORTFOLIO SECTION */
 
@@ -550,8 +599,8 @@
 
   -ms-flex-item-align: center;
 
-      align-self: center;
-  self-justify: center;
+    align-self: center;
+  /* self-justify: center; fixing this makes panels open up evenly*/ 
 }
 
 #port-review-wrapper div p{
@@ -559,9 +608,6 @@
           box-sizing: border-box;
   width: 80%;
 
-  text-justify:
-
-  text-align: ;
 
   -ms-flex-item-align: center;
 

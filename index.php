@@ -7,7 +7,7 @@ include("./main_header.php");
     <ul id='nav-li'>
       <li id='home'>Home</li>
       <li id='portfolio'>Portfolio</li>
-      <!-- <li id='contacts'>Contact</li> -->
+      <li id='contact'>Contact</li>
     </ul>
   </nav>
 
@@ -16,6 +16,26 @@ include("./main_header.php");
     <h1><span>Benji's</span> Web Design</h1>
 
   </header>
+
+  <section id="offer-container">
+      <h2>What we provide</h2>
+      <div  id='offer-info-wrapper'>
+        <div class='icon-info'>
+          <img src= './images/calendar.png' alt='icon'/>
+          <p>Around the clock scheduling to provide service as quickly as possible</p> <!-- Fill these later -->
+        </div>
+
+        <div class='icon-info'>
+          <img src= './images/design.png' alt='icon'/>
+          <p>UX/UI design built to emphasize your brand and business</p>
+        </div>
+
+        <div class='icon-info'>
+          <img src='./images/code.png' alt='icon'/>
+          <p>Fast and responsive websites that will impress on desktop, tablet, and mobile</p>
+        </div>
+      </div>
+    </section>
 
   <div id='portfolio-wrapper'>
 

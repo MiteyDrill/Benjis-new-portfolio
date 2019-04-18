@@ -1,0 +1,14 @@
+- Add essential data to portfolio
+    - social links
+        - linkedIn
+    - websites @done
+        - only best work
+    - contact information
+        - prominant
+    - custom domain name @done
+    - blog
+    - logo
+    - tagline
+    - what we offer
+    - resume
+    - location
