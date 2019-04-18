@@ -5,9 +5,9 @@ include("./main_header.php");
 
   <nav id='navigation'>
     <ul id='nav-li'>
-      <li id='home'>Home</li>
-      <li id='portfolio'>Portfolio</li>
-      <li id='contact'>Contact</li>
+      <li id='nav-home'>Home</li>
+      <li id='nav-portfolio'>Portfolio</li>
+      <li id='nav-contact'>Contact</li>
     </ul>
   </nav>
 
@@ -135,32 +135,37 @@ include("./main_header.php");
 
     </section>
 
+  </div>
+
+  <div id='contact'>
+
     <section id='port-aside-images'>
 
-      <div class='links' >
-        <a href="https://codepen.io/MiteyDrill/" target="_blank">
-          <img src='./images/codepen' alt='codepen link'/>
-          <p>Codepen.io</p>
-        </a>
-      </div>
+
+        <div class='links' >
+          <a href="https://codepen.io/MiteyDrill/" target="_blank">
+            <img src='./images/codepen' alt='codepen link'/>
+            <p>Codepen.io</p>
+          </a>
+        </div>
 
 
-      <div class='links'>
-        <a href="https://github.com/MiteyDrill" target="_blank">
-          <img src='./images/github' alt='github link'/>
-          <p>GitHub</p>
-        </a>
-      </div>
+        <div class='links'>
+          <a href="https://github.com/MiteyDrill" target="_blank">
+            <img src='./images/github' alt='github link'/>
+            <p>GitHub</p>
+          </a>
+        </div>
 
 
-      <div class='links'>
-        <a href="https://twitter.com/TheBen_S" target="_blank">
-          <img src='./images/twitter' alt='twitter link'/>
-          <p>Twitter</p>
-        </a>
-      </div>
-      <!-- <img alt='img-1'/>
-      <img alt='img-2'/> -->
+        <div class='links'>
+          <a href="https://twitter.com/TheBen_S" target="_blank">
+            <img src='./images/twitter' alt='twitter link'/>
+            <p>Twitter</p>
+          </a>
+        </div>
+        <!-- <img alt='img-1'/>
+        <img alt='img-2'/> -->
 
     </section>
 
@@ -195,7 +200,7 @@ include("./main_header.php");
       </div> -->
 
     </section>
-
+  
   </div>
 
 

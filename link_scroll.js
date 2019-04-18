@@ -5,21 +5,21 @@
 //if list is clicked then window will scroll to position of id that is selected
 $("li").click(function() {
 
-  if(this.id === "home"){
+  if(this.id === "nav-home"){
       $([document.documentElement, document.body]).animate({
           scrollTop: $("header").offset().top
       }, 2000);
   }
 
-  if(this.id === "portfolio"){
+  if(this.id === "nav-portfolio"){
       $([document.documentElement, document.body]).animate({
           scrollTop: $("#portfolio-wrapper").offset().top
       }, 2000);
   }
 
-  if(this.id === "contacts"){
+  if(this.id === "nav-contact"){
       $([document.documentElement, document.body]).animate({
-          scrollTop: $("#hero-info").offset().top
+          scrollTop: $("#contact").offset().top
       }, 2000);
   }
 
