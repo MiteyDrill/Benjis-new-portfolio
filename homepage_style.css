@@ -360,6 +360,8 @@
 
   background-color: gray;
 
+  box-shadow: 0px 3px 10px rgba(0,0,0, 0.20);
+
   height: 80vh;
   width: 100%;
 
@@ -372,33 +374,33 @@
 /* IMAGES */
 
 #img1{
-  background: url('./images/leon.jpg');
+  background: url('./images/turflifestyle.png');
+  background-size: cover;
+  background-position: 50% 0%;
+}
+
+#img2{
+  background: url('./images/bitmapwarriors.png');
   background-size: cover;
   background-position: 20% 0%;
 }
 
-#img2{
-  background: url('./images/portal.jpg');
-  background-size: cover;
-  background-position: 10% 0%;
-}
-
 #img3{
-  background: url('./images/mobile_bistro.jpg');
+  background: url('./images/bendev.png');
   background-size: cover;
-  background-position: 37% 0%;
+  background-position: 60% 0%;
 }
 
 #img4{
-  background: url('./images/mechanic.jpg');
+  background: url('./images/bendev.png');
   background-size: cover;
   background-position: 90% 0%;
 }
 
 #img5{
-  background: url('./images/brand.jpg');
+  background: url('./images/benjis-web.png');
   background-size: cover;
-  background-position: 20% 0%;
+  background-position: 40% 0%;
 }
 
 #img6{
@@ -801,10 +803,14 @@ footer p{
 
   #portfolio-wrapper{
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr 2fr;
+    grid-template-rows: auto;
     grid-row-gap: 10vh;
 
     overflow: hidden; /*Turn off jquery animatons*/
+  }
+
+  #port-images {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .links{
@@ -817,16 +823,6 @@ footer p{
   #port-review-wrapper{
     padding: 3em 3em;
     grid-row-gap: 3vh;
-  }
-
-  #map{
-    height: 35vh;
-    min-height: 30vh;
-  }
-
-  #hero-info{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
   }
 
   #hero-details{
