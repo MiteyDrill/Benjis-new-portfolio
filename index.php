@@ -1,5 +1,5 @@
 <?php
-include("./main_header.php");
+include("./main_header.php"); 
 /*body*/
 ?>
 
@@ -13,7 +13,34 @@ include("./main_header.php");
 
   <header id='header'>
 
-    <h1><span>Benji's</span> Web Design</h1>
+    <!-- <h1><span>Benji's</span></h1>
+    <img style="width: 25%;"src='./images/logo-svg.svg' alt='our_logo'/> -->
+
+    <!--LOGO-->
+    <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  ;)-->
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="370 -31.2 1440 990.7" style="enable-background:new 370 -31.2 1440 990.7;" xml:space="preserve">
+
+      <g id="XMLID_14_">
+        <path id="XMLID_15_" class="st0" d="M1567.2,414.9L1286,760.1h-226.8L1340.4,415L1059.1,69.8H1286L1567.2,414.9z M1534.4,414.9
+          l-258-316.6h-161.3l259.2,316.6l-259.2,316.6h161.2L1534.4,414.9z"/>
+      </g>
+      <g id="XMLID_3_">
+        <path id="XMLID_8_" class="st0" d="M1100,839.8H873.2L591.9,494.7l281.3-345.1H1100L818.7,494.7L1100,839.8z M1044,811.3L786,494.7
+          l258-316.6H884.4L624,495.7l258.8,315.6H1044z"/>
+      </g>
+      <g id="XMLID_6_">
+        <path id="XMLID_25_" class="st0" d="M1144.7,426.1c17.8,17.8,26.6,47.1,26.6,88.1s-8.9,70.5-26.6,88.5c-12,12-29.1,18.1-51.2,18.1
+          c-9.5,0-33.9-1-41-3v-20.2c6.6,2.6,30,3.9,38,3.9c23.2,0,39.4-9.2,48.6-27.5c6.9-13.5,10.3-33.4,10.3-59.7
+          c0-26.4-3.4-46.3-10.3-59.7c-9.2-18.1-25.4-27.1-48.6-27.1c-22.9,0-39,9-48.1,27.1c-6.9,13.5-10.3,33.4-10.3,59.7v104h-21.9V311.4
+          h21.9v125.9c14.9-19.8,35.4-29.7,61.5-29.7C1115.6,407.6,1132.7,413.8,1144.7,426.1z"/>
+      </g>
+    </svg>
+
+
+
+    <!--LOGO-->
 
   </header>
 
@@ -142,12 +169,12 @@ include("./main_header.php");
     <section id='port-aside-images'>
 
 
-        <div class='links' >
+        <!-- <div class='links' >
           <a href="https://codepen.io/MiteyDrill/" target="_blank">
             <img src='./images/codepen' alt='codepen link'/>
             <p>Codepen.io</p>
           </a>
-        </div>
+        </div> -->
 
 
         <div class='links'>

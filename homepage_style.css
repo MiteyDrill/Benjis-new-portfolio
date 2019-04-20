@@ -12,6 +12,48 @@
     font-style: normal;
 }
 
+
+/*SVG*/
+
+.st0{
+  fill:#A21E22;
+}
+
+#XMLID_8_{
+  animation-duration: 1.5s;
+  animation-name: animateLogo2;
+  animation-direction: forwards;
+}
+
+#XMLID_15_{
+  animation-duration: 1.5s;
+  animation-name: animateLogo;
+  animation-direction: forwards;
+}
+
+@keyframes animateLogo2 {
+  from{
+    transform: translateX(-50px) translateY(50px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0px) translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+@keyframes animateLogo {
+  from{
+    transform: translateX(50px) translateY(-50px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0px) translateY(0px);
+    opacity: 1;
+  }
+}
+
 /* GLOBAL */
 *{
   font-family: monospace;
