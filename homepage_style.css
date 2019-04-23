@@ -724,6 +724,15 @@ h1{
 
 /*Review Section*/
 
+
+
+#form{
+  height: 100%;
+  width: 50%;
+
+  align-self: center;
+}
+
 #port-review-wrapper{
   /* display: grid; */
   display: -webkit-box;
@@ -1045,6 +1054,7 @@ footer p{
 
   #contact{
     flex-direction: column;
+    justify-content: space-around;
   }
 
   #offer-info-wrapper{
@@ -1108,6 +1118,9 @@ footer p{
     width: 80%;
   }
 
+  #form{
+    width: 90%;
+  }
 
 }
 

@@ -15,9 +15,9 @@ include("./main_header.php");
       <ul id='nav-li'>
         <li id='nav-home'>Home</li>
         <li class='line'>|</li>
-        <li id='nav-portfolio'> Projects</li>
+        <li id='nav-portfolio'>Projects</li>
         <li class='line'>|</li>
-        <li id='nav-contact'> About Us</li>
+        <li id='nav-contact'>Contact Us</li>
       </ul>
     </div>
   </nav>
@@ -221,15 +221,54 @@ include("./main_header.php");
 
   <div id='contact'>
 
-    <section id='port-aside-images'>
+    <div id = 'form'>
+
+    <form action="./scripts/email_form_handler.php" method="post">
+      <div>
+        <input type="text" name='firstname' placeholder="Firstname"><br>
+      </div>
+      <br>
+      <div>
+        <input type="text" name='lastname' placeholder="Lastname"><br>
+      </div>
+      <br>
+      <div>
+        <input type="email" name='phone_email' placeholder="Phone or Email">
+      </div>
+      <br>
+      <div>
+        <input type='hidden' name='phone' placeholder="509123123"><br>
+      </div>
+
+      <label for="select" name="option_value">I'm interested in a...</label><br>
+        <input type="radio" name="site" value="e-com" checked> Business Site<br>
+        <input type="radio" name="site" value="squarespace"> Squarespace Site<br>
+        <input type="radio" name="site" value="wordpress"> Wordpress Site<br>
+        <input type="radio" name="site" value="business"> Personal Site<br>
+        <input type="radio" name="site" value="other"> Other<br>
+        
+      <br><br>
 
 
-        <!-- <div class='links' >
-          <a href="https://codepen.io/MiteyDrill/" target="_blank">
-            <img src='./images/codepen' alt='codepen link'/>
-            <p>Codepen.io</p>
-          </a>
-        </div> -->
+      <label for="select" name="option_value">My estimated budget</label><br>
+      <select>
+        <option value="300">300$</option>
+        <option value="500">500$</option>
+        <option value="1000">1000$+</option>
+      </select>
+
+      <br><br>
+
+      <div>
+        <textarea name='text-area' type="text area" placeholder="Give us an idea of your project"></textarea>
+      </div>
+
+      <button type='submit' name='form-submit' id='submit-form-button'> Submit </button>
+    </form>  
+
+    </div>
+
+    <!-- <section id='port-aside-images'>
 
 
         <div class='links'>
@@ -246,10 +285,8 @@ include("./main_header.php");
             <p>Twitter</p>
           </a>
         </div>
-        <!-- <img alt='img-1'/>
-        <img alt='img-2'/> -->
 
-    </section>
+    </section> -->
 
     <section id='port-review-wrapper'>
 
