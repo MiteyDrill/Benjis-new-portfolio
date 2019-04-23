@@ -59,6 +59,21 @@
   font-family: monospace;
 }
 
+p{
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: rgba(120, 120, 120, 1);
+}
+
+h1{
+  font-family: 'barlow';
+}
+
 .red-txt{
   color: red;
 }
@@ -177,6 +192,66 @@
 
 /*HEADER*/
 
+
+/************* FAQ **************/
+
+#faq{
+  height: auto;
+  padding: 2em 0;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-panel{
+
+  background-color: #F3F3F3;
+
+  margin: 2em 0;
+
+  padding: 3em 0;
+
+  width: 90%;
+
+  border-radius: 8px;
+
+  justify-self: center;
+  align-self: center;
+
+}
+
+#faq div h1{
+  color: #707070;
+  font-family: 'league';
+
+  font-size: 32px;
+
+  margin: 0em 2em;
+}
+
+#faq div h3{
+  margin: 0em 4em;
+}
+
+#faq div p{
+  color: #000000;
+  margin: 3em 4em;
+
+}
+
+#faq2{
+  text-align: center;
+}
+#faq2 p{
+  text-align: center;
+}
+
+#faq3{
+  text-align: right;
+}
+
+/************* FAQ **************/
+
 /************* WHAT WE OFFER **************/
 
 #offer-container{
@@ -195,7 +270,7 @@
 
 #offer-container h2{
   font-size: calc(2em + 1vw + 0.5vh);
-  font-family: 'league';
+  font-family: 'barlow';
   margin-bottom: 1em;
 }
 
@@ -602,6 +677,7 @@
 #port-review-wrapper h3{
   padding-left: 0.2em;
   font-size: calc(1em + 0.5vw + 0.9vh);
+  color: rgba(120, 120, 120, 1);
 }
 
 #port-review-wrapper p{
@@ -648,7 +724,7 @@
   height: 50px;
   width: 50px;
 
-  color: rgba(220,220,220,1);
+  color: rgba(200,200,200,1);
   line-height: 50px;
   border: 1px solid gray;
   background-color: gray;
@@ -878,6 +954,17 @@ footer p{
 
   #contact{
     flex-direction: column;
+  }
+
+  #offer-info-wrapper{
+    flex-direction: column;
+  }
+
+  .icon-info{
+    justify-self: center;
+    align-self: center;
+    width: 50%;
+    margin: 2.9em 0;
   }
 
   #port-images{

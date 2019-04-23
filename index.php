@@ -44,6 +44,26 @@ include("./main_header.php");
 
   </header>
 
+  <section id='faq'>
+    <div id='faq1' class='faq-panel'>
+    <h1>Need a website?</h1>
+    <h3>We’re here for you</h3>
+    <p>Building a webpage or website for your business can be quite daunting, so we here at Benjis help you with the  process.</p>
+    </div>
+
+    <div id='faq2' class='faq-panel'>
+    <h1>Does an online site help my business?</h1>
+    <h3>Absolutely!</h3>
+    <p>Just one single example, a webpage can be a live form of advertisement. A webpage will attract online and offline. You can inform and satisfy potential customers before they’ve even walked through the door!</p>
+    </div>
+
+    <div id='faq3' class='faq-panel'>
+    <h1>What should I pay for a website…?</h1>
+    <h3>What are your needs?</h3>
+    <p>Money can be tight, we understand. Our prices are well streamlined and designed for you and you alone, call us, lets talk.</p>
+    </div>
+  </section>
+
   <section id="offer-container">
       <h2>What we provide</h2>
       <div  id='offer-info-wrapper'>
@@ -199,7 +219,7 @@ include("./main_header.php");
     <section id='port-review-wrapper'>
 
       <h3>About me</h3>
-      <p>My name is <span id='username'>Benjamin Sanchez</span>.</br> I am a <span class='flip-txt red-txt'>web developer</span> who is passionate about design and UI</p>
+      <p>My name is <span id='username'>Benjamin Sanchez</span>.<br> I am a <span class='flip-txt red-txt'>web developer</span> who is passionate about design and UI</p>
 
       <!-- <div>
         <img src='./images/mike.jpg'  alt='hero-1'/>

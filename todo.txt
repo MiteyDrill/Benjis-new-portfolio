@@ -1,14 +1,27 @@
+- Edit the nav bar
+    - different on mobile
+    - animated
+
+- Website slightly animated when scrolling
+    - test on mobile
+
 - Add essential data to portfolio
-    - social links
-        - linkedIn
     - websites @done
         - only best work
-    - contact information
+        - contact information
         - prominant
+        - meta information @done
+        - SEO content
+        - email / phone
+        - location
+        - hours
+        - business name
     - custom domain name @done
     - blog
-    - logo
-    - tagline
-    - what we offer
+    - logo @done
+    - tagline @done
     - resume
-    - location
+
+- add more websites to examples
+    - remove bad sites
+    - update pictures?
