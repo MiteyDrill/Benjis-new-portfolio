@@ -4,11 +4,22 @@ include("./main_header.php");
 ?>
 
   <nav id='navigation'>
-    <ul id='nav-li'>
-      <li id='nav-home'>Home</li>
-      <li id='nav-portfolio'>Portfolio</li>
-      <li id='nav-contact'>Contact</li>
-    </ul>
+    <div id='nav-info'>
+      <p>Benji's Web Design</p>
+      <p id='menu'>Menu</p>
+      <p>509 /- 316 -/ 1243</p>
+    </div>
+
+    <div id = "burger-icon"></div>
+    <div id = 'burger-reveal'>
+      <ul id='nav-li'>
+        <li id='nav-home'>Home</li>
+        <li class='line'>|</li>
+        <li id='nav-portfolio'> Projects</li>
+        <li class='line'>|</li>
+        <li id='nav-contact'> About Us</li>
+      </ul>
+    </div>
   </nav>
 
   <header id='header'>

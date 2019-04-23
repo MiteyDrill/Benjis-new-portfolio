@@ -4,6 +4,7 @@
 
 - Website slightly animated when scrolling
     - test on mobile
+    - text resize 
 
 - Add essential data to portfolio
     - websites @done
