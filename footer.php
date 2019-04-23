@@ -1,7 +1,7 @@
 
   <footer>
 
-    <p>Benji's</p>
+    <p style="color: white;">Benji's</p>
 
   </footer>
 

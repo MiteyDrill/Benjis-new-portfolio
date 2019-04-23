@@ -103,7 +103,7 @@ if($(window).width() > 900){
   $(function(){
       $('.port-div-img').on( "mouseenter", function(){
 
-        $( this ).css('z-index', 1);
+        $(".port-div-img").css("z-index", '');
 
         $( this ).animate({
           width: "130%"
@@ -164,41 +164,72 @@ if($(window).width() < 900){
 
     let shown = true;
 
+    let hide = function () {
+        
+      $(".port-div-img").css("z-index", '');
+
+      $("#portfolio-wrapper").css("pointer-events", "none");
+      $("#nav-li").css("display", "flex");
+
+      $("#nav-li").animate({
+        opacity: 1
+      }, 1500, function () {
+        $("#nav-li").css("z-index", "3");
+      });
+
+      $("#nav-info").css("z-index", "4");
+
+      shown = false;
+    }
+
+    let show = function () {
+      $("#portfolio-wrapper").css("pointer-events", "auto");
+
+      $("#nav-li").animate({
+        opacity: 0
+      }, 1000, function (){
+        $("#nav-li").css("display", "none");
+      })
+      
+      $("#nav-info").css("z-index", "3");
+
+      shown = true;
+    }
+
+    $("li").click(function() {
+
+      if(this.id === "nav-home"){
+          $([document.documentElement, document.body]).animate({
+              scrollTop: $("header").offset().top
+          }, 2000, show());
+      }
+    
+      if(this.id === "nav-portfolio"){
+          $([document.documentElement, document.body]).animate({
+              scrollTop: $("#portfolio-wrapper").offset().top
+          }, 2000, show());
+      }
+    
+      if(this.id === "nav-contact"){
+          $([document.documentElement, document.body]).animate({
+              scrollTop: $("#contact").offset().top
+          }, 2000, show());
+
+          // show();
+      }
+    
+    });
+    
+
     $("#menu").on("click", function () {
 
-      
       if(shown){
         //disppear navigation
-
-        $(".port-div-img").css("z-index", '');
-
-        $("#portfolio-wrapper").css("pointer-events", "none");
-        $("#nav-li").css("display", "flex");
-
-        $("#nav-li").animate({
-          opacity: 1
-        }, 2000, function () {
-          $("#nav-li").css("z-index", "3");
-        });
-
-        $("#nav-info").css("z-index", "4");
-
-        shown = false;
+        hide();
       } else {
         //reappear navigation
-        $("#portfolio-wrapper").css("pointer-events", "auto");
-
-        $("#nav-li").animate({
-          opacity: 0
-        }, 2000, function (){
-          $("#nav-li").css("display", "none");
-        })
-        
-        $("#nav-info").css("z-index", "3");
-
-        shown = true;
+        show();
       }
-
 
     });
   });

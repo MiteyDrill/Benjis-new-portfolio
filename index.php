@@ -28,26 +28,31 @@ include("./main_header.php");
     <img style="width: 25%;"src='./images/logo-svg.svg' alt='our_logo'/> -->
 
     <!--LOGO-->
-    <?xml version="1.0" encoding="utf-8"?>
+    <?php
+    echo "
+    <?xml version=\"1.0\" encoding=\"utf-8\"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  ;)-->
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      viewBox="370 -31.2 1440 990.7" style="enable-background:new 370 -31.2 1440 990.7;" xml:space="preserve">
+    <svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"
+      viewBox=\"370 -31.2 1440 990.7\" style=\"enable-background:new 370 -31.2 1440 990.7;\" xml:space=\"preserve\">
 
-      <g id="XMLID_14_">
-        <path id="XMLID_15_" class="st0" d="M1567.2,414.9L1286,760.1h-226.8L1340.4,415L1059.1,69.8H1286L1567.2,414.9z M1534.4,414.9
-          l-258-316.6h-161.3l259.2,316.6l-259.2,316.6h161.2L1534.4,414.9z"/>
+      <g id=\"XMLID_14_\">
+        <path id=\"XMLID_15_\" class=\"st0\" d=\"M1567.2,414.9L1286,760.1h-226.8L1340.4,415L1059.1,69.8H1286L1567.2,414.9z M1534.4,414.9
+          l-258-316.6h-161.3l259.2,316.6l-259.2,316.6h161.2L1534.4,414.9z\"/>
       </g>
-      <g id="XMLID_3_">
-        <path id="XMLID_8_" class="st0" d="M1100,839.8H873.2L591.9,494.7l281.3-345.1H1100L818.7,494.7L1100,839.8z M1044,811.3L786,494.7
-          l258-316.6H884.4L624,495.7l258.8,315.6H1044z"/>
+      <g id=\"XMLID_3_\">
+        <path id=\"XMLID_8_\" class=\"st0\" d=\"M1100,839.8H873.2L591.9,494.7l281.3-345.1H1100L818.7,494.7L1100,839.8z M1044,811.3L786,494.7
+          l258-316.6H884.4L624,495.7l258.8,315.6H1044z\"/>
       </g>
-      <g id="XMLID_6_">
-        <path id="XMLID_25_" class="st0" d="M1144.7,426.1c17.8,17.8,26.6,47.1,26.6,88.1s-8.9,70.5-26.6,88.5c-12,12-29.1,18.1-51.2,18.1
+      <g id=\"XMLID_6_\">
+        <path id=\"XMLID_25_\" class=\"st0\" d=\"M1144.7,426.1c17.8,17.8,26.6,47.1,26.6,88.1s-8.9,70.5-26.6,88.5c-12,12-29.1,18.1-51.2,18.1
           c-9.5,0-33.9-1-41-3v-20.2c6.6,2.6,30,3.9,38,3.9c23.2,0,39.4-9.2,48.6-27.5c6.9-13.5,10.3-33.4,10.3-59.7
           c0-26.4-3.4-46.3-10.3-59.7c-9.2-18.1-25.4-27.1-48.6-27.1c-22.9,0-39,9-48.1,27.1c-6.9,13.5-10.3,33.4-10.3,59.7v104h-21.9V311.4
-          h21.9v125.9c14.9-19.8,35.4-29.7,61.5-29.7C1115.6,407.6,1132.7,413.8,1144.7,426.1z"/>
+          h21.9v125.9c14.9-19.8,35.4-29.7,61.5-29.7C1115.6,407.6,1132.7,413.8,1144.7,426.1z\"/>
       </g>
     </svg>
+    "
+    
+    ?>
 
 
 
@@ -56,7 +61,11 @@ include("./main_header.php");
   </header>
 
   <section id='faq'>
-    <div id='faq1' class='faq-panel'>
+    <div  data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-easing="ease-out-bounce"
+          
+          id='faq1' class='faq-panel'>
     <h1>Need a website?</h1>
     <h3>We’re here for you</h3>
     <p>Building a webpage or website for your business can be quite daunting, so we here at Benjis help you with the  process.</p>
@@ -128,8 +137,23 @@ include("./main_header.php");
 
       </div>
 
-
       <div id='img3' class='port-div-img'>
+
+        <div id='img3-info' class='info-panel'>
+          <div id='img3-info' class='info-panel'>
+            <h4>Kids-Motto</h4>
+            <p class='subtext'>Wordpress</p>
+            <p class='maintext'>
+              An Ecommerce like website we built. It features a lot of great deals, go check it out!
+            </p>
+            <a type="button" href="http://kids-motto.com" value="kids-motto" target="_blank" class="button">Visit Site</a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- <div id='img3' class='port-div-img'>
 
         <div id='img3-info' class='info-panel'>
           <div id='img3-info' class='info-panel'>
@@ -143,7 +167,7 @@ include("./main_header.php");
           </div>
         </div>
 
-      </div>
+      </div> -->
 
       <!-- <div id='img4' class='port-div-img'>
 
@@ -210,7 +234,7 @@ include("./main_header.php");
 
         <div class='links'>
           <a href="https://github.com/MiteyDrill" target="_blank">
-            <img src='./images/github' alt='github link'/>
+            <img src='./images/github.png' alt='github link'/>
             <p>GitHub</p>
           </a>
         </div>
@@ -218,7 +242,7 @@ include("./main_header.php");
 
         <div class='links'>
           <a href="https://twitter.com/TheBen_S" target="_blank">
-            <img src='./images/twitter' alt='twitter link'/>
+            <img src='./images/twitter.png' alt='twitter link'/>
             <p>Twitter</p>
           </a>
         </div>
@@ -287,8 +311,19 @@ include("./main_header.php");
 <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
 <script src="map.js" type='text/javascript'></script>
 <script src="link_scroll.js" type='text/javascript'></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>-->
 <script src="animations.js" type='text/javascript'></script>
+
+<script  type="module">
+
+import {sal} from './scripts/sal-master/src/sal.js'
+
+sal();
+
+//doesn't work on local server :(
+
+console.log("sal");
+
+</script>
 
 <script>
 	if($(window).width() < 900){

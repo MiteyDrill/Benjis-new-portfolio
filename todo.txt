@@ -1,22 +1,22 @@
-- Edit the nav bar
-    - different on mobile
+- Edit the nav bar @done
+    - different on mobile @done
     - animated @done
 
 - Website slightly animated when scrolling
     - test on mobile
-    - text resize 
+    - text resize @done
 
 - Add essential data to portfolio
     - websites @done
-        - only best work
+        - only best work @done
         - contact information
         - prominant
         - meta information @done
-        - SEO content
-        - email / phone
+        - SEO content @done
+        - email / phone @done
         - location
         - hours
-        - business name
+        - business name @done
     - custom domain name @done
     - blog
     - logo @done
@@ -24,5 +24,5 @@
     - resume
 
 - add more websites to examples
-    - remove bad sites
+    - remove bad sites @done
     - update pictures?
