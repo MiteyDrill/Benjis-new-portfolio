@@ -1,6 +1,6 @@
 - Edit the nav bar
     - different on mobile
-    - animated
+    - animated @done
 
 - Website slightly animated when scrolling
     - test on mobile
