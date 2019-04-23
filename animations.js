@@ -84,6 +84,7 @@ let del = function(flip){
 //flips written text every couple seconds
 let changeText = function(time = 2000, flip = true){
 
+
   let initialInterval = setInterval(function() {
 
     del(flip);
@@ -120,7 +121,8 @@ if($(window).width() > 900){
 
       $('.port-div-img').on( "mouseleave", function(){
 
-        $( this ).css('z-index', 0);
+        // $( this ).css('z-index', 0);
+        $(".port-div-img").css("z-index", '');
 
         $( this ).animate({
           width: "100%"
@@ -154,6 +156,49 @@ if($(window).width() < 900){
     }
   );
 
-
-
 }
+
+  //NAVIGATION REVEAL/ANIMATION
+
+  $(document).ready(function() {
+
+    let shown = true;
+
+    $("#menu").on("click", function () {
+
+      
+      if(shown){
+        //disppear navigation
+
+        $(".port-div-img").css("z-index", '');
+
+        $("#portfolio-wrapper").css("pointer-events", "none");
+        $("#nav-li").css("display", "flex");
+
+        $("#nav-li").animate({
+          opacity: 1
+        }, 2000, function () {
+          $("#nav-li").css("z-index", "3");
+        });
+
+        $("#nav-info").css("z-index", "4");
+
+        shown = false;
+      } else {
+        //reappear navigation
+        $("#portfolio-wrapper").css("pointer-events", "auto");
+
+        $("#nav-li").animate({
+          opacity: 0
+        }, 2000, function (){
+          $("#nav-li").css("display", "none");
+        })
+        
+        $("#nav-info").css("z-index", "3");
+
+        shown = true;
+      }
+
+
+    });
+  });

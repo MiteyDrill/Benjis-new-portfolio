@@ -102,6 +102,8 @@ h1{
 #nav-info{
   width: 100%;
 
+  z-index: 3;
+
   color: white;
 
   justify-content: space-around;
@@ -121,9 +123,26 @@ h1{
 
 #menu:hover{
   cursor: pointer;
+
+  animation-name: darken;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes darken {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.75;
+  }
 }
 
 
+
+#navigation{
+  position: fixed;
+}
 #navigation div{
   display: flex;
   flex-direction: row;
@@ -142,14 +161,14 @@ h1{
   box-sizing: border-box;
 
   list-style: none;
-  display: flex;
+  /* display: flex; */
+  display: none;
   flex-direction: row;
 }
 
 #nav-li{
   opacity: 0;
-  display: none !important; /*change this during animation*/
-
+  pointer-events: none;
   z-index: 3;
   background-color: rgba(0,0,0,0.85);
 }
@@ -384,6 +403,8 @@ h1{
 .info-panel{
   width: 0%;      /*animate this*/
   height: 100%;
+
+  position: relative;
 
   opacity: 0;     /*animate this*/
 
