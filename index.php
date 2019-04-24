@@ -245,7 +245,7 @@ include("./main_header.php");
         <br>
 
         <div>
-          <label id='option' for="select" name="price_option">My estimated budget</label>
+          <label id='option' for="select" name="price_option">Project budget goal</label>
           <select name='price'>
             <option value="1">300$</option>
             <option value="5">500$</option>

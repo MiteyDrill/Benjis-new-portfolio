@@ -1038,10 +1038,10 @@ footer p{
 form div input{
   border: none;
 
-  background-color: black;
-  border: 0px solid white;
+  background-color: rgba(0,0,0,0.25);
+  border: 0px solid black;
   border-radius: 3px;
-  color: white;
+  color: black;
 
   font-family: 'Roboto', sans-serif;
 
@@ -1053,7 +1053,7 @@ form div input{
 }
 
 form div input:focus{
-  background-color: rgba(0,0,0, 0.7);
+  background-color: rgba(255,255,255, 0.1);
 }
 
 form div select{
@@ -1067,17 +1067,32 @@ form textarea{
 }
 
 form button{
-  background-color: rgba(130, 180, 250, 1);
+  background-color: rgb(78, 132, 207);
   font-family: "Roboto";
   margin: 2em 0;
   font-size: 1.5rem;
   font-weight: 900;
-  color: rgba(20, 50, 200, 1);
+  color: white;
   width: 100%;
   padding: 3vh;
   border: none;
 
   cursor: pointer;
+}
+
+form button:hover{
+  animation-name: submit-hover;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes submit-hover{
+  from{
+    /* background-color: rgba(130, 180, 250, 1); */
+  }
+  to{
+    background-color: rgb(50, 82, 241);
+  }
 }
 
 #radio{
@@ -1158,7 +1173,7 @@ form button{
   }
 
   #contact{
-    padding: 3em 0;
+    padding: 3em;
   }
 
 }
