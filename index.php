@@ -74,7 +74,7 @@ include("./main_header.php");
     <div id='faq2' class='faq-panel'>
     <h1>Does an online site help my business?</h1>
     <h3>Absolutely!</h3>
-    <p>Just one single example, a webpage can be a live form of advertisement. A webpage will attract online and offline. You can inform and satisfy potential customers before they’ve even walked through the door!</p>
+    <p>A webpage can be a live form of advertisement. A webpage will attract online and offline. Its primary use could be to inform and satisfy potential customers before they’ve even walked through the door!</p>
     </div>
 
     <div id='faq3' class='faq-panel'>
@@ -223,48 +223,44 @@ include("./main_header.php");
 
     <div id = 'form'>
 
-    <form action="./scripts/email_form_handler.php" method="post">
-      <div>
-        <input type="text" name='firstname' placeholder="Firstname"><br>
-      </div>
-      <br>
-      <div>
-        <input type="text" name='lastname' placeholder="Lastname"><br>
-      </div>
-      <br>
-      <div>
-        <input type="email" name='phone_email' placeholder="Phone or Email">
-      </div>
-      <br>
-      <div>
-        <input type='hidden' name='phone' placeholder="509123123"><br>
-      </div>
+      <h3 style="font-family: arial;">Let's chat.</h3>
 
-      <label for="select" name="option_value">I'm interested in a...</label><br>
-        <input type="radio" name="site" value="e-com" checked> Business Site<br>
-        <input type="radio" name="site" value="squarespace"> Squarespace Site<br>
-        <input type="radio" name="site" value="wordpress"> Wordpress Site<br>
-        <input type="radio" name="site" value="business"> Personal Site<br>
-        <input type="radio" name="site" value="other"> Other<br>
-        
-      <br><br>
+      <form action="./scripts/email_form_handler.php" method="post">
+          <div id='text'>
+              <input type="text" name='firstname' placeholder="Firstname (required)" required><br>
+              <input type="text" name='lastname' placeholder="Lastname (required)" required><br>
+              <input type="email" name='phone_email' placeholder="Email (required)" required><br>
+              <input type='hidden' name='phone' placeholder="509123123">
+          </div>
 
+          <div id='radio'>
+            <label for="select" name="site_option">I'm interested in a...</label><br>
+            <div><p>Business Site</p> <input type="radio" name="site" value="ecommerce" checked></div>
+            <div><p>Squarespace Site</p><input type="radio" name="site" value="squarespace"></div>
+            <div><p>Wordpress Site</p><input type="radio" name="site" value="wordpress"></div>
+            <div><p>Personal Site</p><input type="radio" name="site" value="business"></div>
+            <div><p>Other</p><input type="radio" name="site" value="other"></div>
+          </div>
 
-      <label for="select" name="option_value">My estimated budget</label><br>
-      <select>
-        <option value="300">300$</option>
-        <option value="500">500$</option>
-        <option value="1000">1000$+</option>
-      </select>
+        <br>
 
-      <br><br>
+        <div>
+          <label id='option' for="select" name="price_option">My estimated budget</label>
+          <select name='price'>
+            <option value="1">300$</option>
+            <option value="5">500$</option>
+            <option value="10">1000$+</option>
+          </select>
+        </div>
 
-      <div>
-        <textarea name='text-area' type="text area" placeholder="Give us an idea of your project"></textarea>
-      </div>
+        <br>
 
-      <button type='submit' name='form-submit' id='submit-form-button'> Submit </button>
-    </form>  
+        <div id='textarea'>
+          <textarea name='text-area' type="text area" placeholder="Give us an idea of your project" required></textarea>
+        </div>
+
+        <button id='submit-form-button' type='submit' name='form-submit'> Submit </button>
+      </form>  
 
     </div>
 

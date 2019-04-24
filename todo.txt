@@ -26,3 +26,6 @@
 - add more websites to examples
     - remove bad sites @done
     - update pictures?
+- form
+    - more responsive
+    - buttons should make more sense
