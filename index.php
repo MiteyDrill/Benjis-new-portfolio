@@ -24,6 +24,10 @@ include("./main_header.php");
 
   <header id='header'>
 
+  <video style="width:100%; height: 100%; object-fit: cover; opacity: 0.35" autoplay>
+    <source src="./images/video/keyboard_background.mov" type="video/mp4">
+  </video>
+
     <!-- <h1><span>Benji's</span></h1>
     <img style="width: 25%;"src='./images/logo-svg.svg' alt='our_logo'/> -->
 
@@ -32,7 +36,7 @@ include("./main_header.php");
     echo "
     <?xml version=\"1.0\" encoding=\"utf-8\"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  ;)-->
-    <svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"
+    <svg style='position: absolute;' version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"
       viewBox=\"370 -31.2 1440 990.7\" style=\"enable-background:new 370 -31.2 1440 990.7;\" xml:space=\"preserve\">
 
       <g id=\"XMLID_14_\">

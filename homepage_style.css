@@ -17,6 +17,11 @@
 
 /*SVG*/
 
+SVG{
+	height: 80%;
+	width: 80%;
+}
+
 .st0{
   fill:#A21E22;
 }
@@ -1075,14 +1080,17 @@ form button{
   color: white;
   width: 100%;
   padding: 3vh;
-  border: none;
+
+  border: 0px solid white;
+
+  border-radius: 5px;
 
   cursor: pointer;
 }
 
 form button:hover{
   animation-name: submit-hover;
-  animation-duration: 0.7s;
+  animation-duration: 0.4s;
   animation-fill-mode: forwards;
 }
 
